@@ -1,0 +1,182 @@
+/* Global ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+/* Mobile ==================================== */
+/* Header ==================================== */
+header {
+    display: flex;
+    align-self: flex-start;
+}
+
+header img {
+    margin-bottom: 3.5rem;
+    width: 50%;
+}
+
+/* Section ==================================== */
+section {
+    color: white;
+    text-align: center;
+}
+
+section .image img {
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+section .content h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+section .content p {
+    margin: 1.5rem 0;
+    font-size: 1.01rem;
+    font-weight: 400;
+    opacity: .8;
+}
+
+section .content button {
+    padding: 1rem 5rem;
+    background: white;
+    border-radius: 2rem;
+    color:hsl(257, 40%, 49%);
+    font-family: 'Open sans', sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+section button:hover {
+    background: hsl(300, 69%, 71%);
+    transition: .4s;
+}
+
+/* Social media ==================================== */
+section .social-media {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .social-media a {
+    margin: 0 .2rem;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: .8rem;
+    color: white;
+}
+
+section .social-media a:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+/* Footer ==================================== */
+footer {
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+    opacity: .7;
+}
+
+.attribution {
+    font-size: .8rem;
+    text-align: center;
+    color: white;
+}
+.attribution a {
+    color: hsl(300, 69%, 71%);
+    text-decoration: none;
+}
+
+/* Desktop ==================================== */
+/*  ==================================== */
+@media (min-width: 1440px) {
+    /* Global ==================================== */
+    .container {
+        padding: 3rem;
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+    /* Header ==================================== */
+    header img {
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+
+    /* Section ==================================== */
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section .image img {
+        margin: 0;
+        width: 52vw;
+        height: 95%;
+    }
+
+    section .content {
+        margin: 3rem;
+        text-align: left;
+    }
+
+    section .content h1 {
+        font-size: 2.6rem;
+    }
+
+    section .content p {
+        font-size: 1.1rem;
+    }
+
+    section .content button {
+        padding: 1rem 4rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* Section ==================================== */
+    section .social-media {
+        right: 60px;
+        left: auto;
+        transform: none;
+    }
+
+    section .social-media a {
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        font-size: 1rem;
+    }
+}
